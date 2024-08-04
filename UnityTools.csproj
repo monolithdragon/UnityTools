@@ -39,20 +39,29 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.12f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.8f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.12f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.8f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FolderUtility\Folder.cs" />
-    <Compile Include="FolderUtility\FolderEditor.cs" />
+    <Compile Include="Folder Utility\Folder.cs" />
+    <Compile Include="Folder Utility\FolderEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Version Control\CurrentVersionSO.cs" />
+    <Compile Include="Version Control\Editor\VersionBuildPreProcessor.cs" />
+    <Compile Include="Version Control\Version.cs" />
+    <Compile Include="Version Control\VersionControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Editor Utilities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y "D:\Unity Utilities\UnityTools\bin\Debug\UnityTools.dll" "D:\Unity Projects\UnityTools\Assets"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y "D:\Unity Utilities\UnityTools\bin\Debug\UnityTools.dll" "D:\Unity Projects\UnityTools\Assets\UnityTools\Editor"</PostBuildEvent>
   </PropertyGroup>
 </Project>
