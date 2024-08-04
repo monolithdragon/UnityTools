@@ -47,7 +47,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FolderUtility\Folder.cs" />
+    <Compile Include="FolderUtility\FolderEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "D:\Unity Utilities\UnityTools\bin\Debug\UnityTools.dll" "D:\Unity Projects\UnityTools\Assets"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
