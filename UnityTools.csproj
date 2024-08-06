@@ -52,6 +52,8 @@
     <Compile Include="Editor Utilities\ExtendScriptableObjectDrawer.cs" />
     <Compile Include="Folder Utility\Folder.cs" />
     <Compile Include="Folder Utility\FolderEditor.cs" />
+    <Compile Include="Hierarchy Utilities\HierarchyIconDisplay.cs" />
+    <Compile Include="Hierarchy Utilities\UnityEditorBackgroundColor.cs" />
     <Compile Include="Import Asset Utility\Asset.cs" />
     <Compile Include="Import Asset Utility\InportAssetEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
