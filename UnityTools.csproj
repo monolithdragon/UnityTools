@@ -49,17 +49,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Editor Utilities\ExtendScriptableObjectDrawer.cs" />
     <Compile Include="Folder Utility\Folder.cs" />
     <Compile Include="Folder Utility\FolderEditor.cs" />
+    <Compile Include="Import Asset Utility\Asset.cs" />
+    <Compile Include="Import Asset Utility\InportAssetEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Version Control\CurrentVersionSO.cs" />
     <Compile Include="Version Control\Editor\VersionBuildPreProcessor.cs" />
     <Compile Include="Version Control\Version.cs" />
     <Compile Include="Version Control\VersionControl.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Editor Utilities\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /y "D:\Unity Utilities\UnityTools\bin\Debug\UnityTools.dll" "D:\Unity Projects\UnityTools\Assets\UnityTools\Editor"</PostBuildEvent>
